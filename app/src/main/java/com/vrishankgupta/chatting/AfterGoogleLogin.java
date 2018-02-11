@@ -41,7 +41,6 @@ public class AfterGoogleLogin extends AppCompatActivity
         fblike.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(AfterGoogleLogin.this, "FB", Toast.LENGTH_SHORT).show();
                 String url = "https://www.facebook.com/sabkipathshala/";
                 Intent i = new Intent(Intent.ACTION_VIEW);
                 i.setData(Uri.parse(url));
