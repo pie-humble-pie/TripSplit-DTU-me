@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    >
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:text="You can donate and help the school by either contributing through money or donationg the items that they require"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="20sp"-->
+        <!--android:gravity="center"-->
+        <!--android:padding="20dp"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="15dp">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Donate Money"
+        android:textSize="20sp"
+        android:id="@+id/btnDonateMoney"
+        android:background="@drawable/roundrectanglebutton"
+        android:padding="20dp"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Donate"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/roundrectanglebutton"
+        android:textSize="20sp"
+        android:id="@+id/btnDonate"
+        android:padding="20dp"
+        android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="List of items required by the students at the school"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/listitemforproducts"
+            android:id="@+id/lvItems">
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

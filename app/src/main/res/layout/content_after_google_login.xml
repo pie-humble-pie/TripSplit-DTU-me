@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.vrishankgupta.chatting.AfterGoogleLogin"
+    tools:showIn="@layout/app_bar_after_google_login">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="match_parent">
+
+        <com.shamanland.facebook.likebutton.FacebookLikeButton
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:text="Like"
+            android:textSize="30sp"
+            android:id="@+id/fbLike"
+            style="@style/Widget.FacebookLikeButton"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About"
+            android:layout_below="@id/fbLike"
+            android:id="@+id/tv1"
+            android:textSize="40sp"
+            style="@style/Base.TextAppearance.AppCompat.Headline"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/black"
+            android:id="@+id/view1"
+            android:layout_below="@id/tv1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view1"
+            android:layout_marginTop="5dp"
+            android:id="@+id/tvAbout"
+            android:text="@string/about"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="20sp"/>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/tvAbout"
+            android:layout_marginTop="15dp"
+            android:id="@+id/ivAbout"
+            android:src="@drawable/school3"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Impressum"
+            android:layout_marginTop="20dp"
+            android:id="@+id/tv2"
+            android:layout_below="@id/ivAbout"
+            android:textSize="40sp"
+            style="@style/Base.TextAppearance.AppCompat.Headline"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/black"
+            android:id="@+id/view2"
+            android:layout_below="@id/tv2"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view2"
+            android:layout_marginTop="5dp"
+            android:id="@+id/tvImpressum"
+            android:text="@string/impressum"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/tvImpressum"
+            android:layout_marginTop="15dp"
+            android:id="@+id/ivImpressum"
+            android:src="@drawable/school2"
+            android:scaleType="centerCrop"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Story"
+            android:layout_marginTop="20dp"
+            android:id="@+id/tv3"
+            android:layout_below="@id/ivImpressum"
+            android:textSize="40sp"
+            style="@style/Base.TextAppearance.AppCompat.Headline"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/black"
+            android:id="@+id/view3"
+            android:layout_below="@id/tv3"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view3"
+            android:layout_marginTop="5dp"
+            android:id="@+id/tvStory"
+            android:text="@string/story"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/tvStory"
+            android:layout_marginTop="15dp"
+            android:id="@+id/ivStory"
+            android:src="@drawable/school1"
+            android:scaleType="centerCrop"/>
+
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

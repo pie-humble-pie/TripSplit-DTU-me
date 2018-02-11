@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_login"
+    tools:context="com.vrishankgupta.chatting.LoginActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="Login To Your Account "
+        android:id="@+id/tvLogin"
+        android:textSize="40sp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:padding="20dp"
+        android:layout_below="@id/tvLogin"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/btnAadhar"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:background="@drawable/border"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/aadhar" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Scan Your Aadhaar Card"
+                android:textSize="15sp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <com.shobhitpuri.custombuttons.GoogleSignInButton
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:textSize="90sp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/btnGoogleLogin"
+        android:text="Sign In With Google"
+        android:layout_below="@id/btnAadhar"
+        android:layout_marginTop="20dp"
+        app:isDarkTheme="true" />
+
+</RelativeLayout>

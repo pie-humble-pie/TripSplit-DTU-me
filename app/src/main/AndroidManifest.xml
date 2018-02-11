@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vrishankgupta.chatting">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ChatMainActivity" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AadharHomeActivity" />
+        <activity android:name=".SavedAadhaarCardActivity" />
+        <activity
+            android:name=".AfterGoogleLogin"
+            android:label="@string/title_activity_after_google_login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MarketActivity" />
+        <activity android:name=".MoneyDonated" />
+        <activity android:name=".DonateItemFromListActivity" />
+        <activity android:name=".ConfirmDonationOrderActivity" />
+        <activity android:name=".PaymentGateWayActivity" />
+        <activity android:name=".ThankYouActivity" />
+        <activity android:name=".OTPActivity" />
+        <activity android:name=".DonationActivity" />
+        <activity android:name=".MarketDescription" />
+        <activity android:name=".InvoiceActivity"></activity>
+    </application>
+
+</manifest>

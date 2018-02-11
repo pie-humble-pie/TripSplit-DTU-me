@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:padding="8dp"
+    android:layout_height="match_parent"
+    tools:context="com.vrishankgupta.chatting.InvoiceActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Item Name"
+        style="@style/Base.TextAppearance.AppCompat.Headline"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:id="@+id/cartName"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/cartName"
+        android:text="Quantity"
+        android:id="@+id/quantity"
+        android:gravity="center"
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/quantity"
+        android:layout_marginTop="20dp"
+        android:text="Total Cost:-"
+        android:gravity="center"
+        android:id="@+id/cost"
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="25sp"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_marginStart="90dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/ivItem"
+        android:layout_below="@id/cost"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Thanks For Buying!"
+        android:gravity="center"
+        style="@style/TextAppearance.AppCompat.Body1"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundrectanglebutton"
+        android:layout_below="@id/ivItem"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="150dp"
+        android:text="Proceed"
+        android:id="@+id/proceed"
+        android:padding="20dp"/>
+
+</RelativeLayout>

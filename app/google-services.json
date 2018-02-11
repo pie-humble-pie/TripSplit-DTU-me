@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "395066272142",
+    "firebase_url": "https://chat-aa0f2.firebaseio.com",
+    "project_id": "chat-aa0f2",
+    "storage_bucket": "chat-aa0f2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:395066272142:android:c194487d7b575ba2",
+        "android_client_info": {
+          "package_name": "com.vrishankgupta.chatting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "395066272142-pcge0pcq4iure64o3cn8jgqfnv8af1gb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vrishankgupta.chatting",
+            "certificate_hash": "1eccba8c97b7c5fc5db33240225a38c44cb1114c"
+          }
+        },
+        {
+          "client_id": "395066272142-okmg2g92139a8512itm6rqum7hu9dhld.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9RcncFN6ruehOnxfHt4bBuBo2ghE_Q1M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "395066272142-okmg2g92139a8512itm6rqum7hu9dhld.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
