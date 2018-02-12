@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_physics"
+            android:title="PHYSICS" />
+
+        <item
+            android:id="@+id/nav_chemistry"
+            android:title="CHEMISTRY" />
+
+        <item
+            android:id="@+id/nav_maths"
+            android:title="MATHS" />
+
+        <item
+            android:id="@+id/nav_cpp"
+            android:title="C++" />
+
+
+        <item
+            android:id="@+id/nav_java"
+            android:title="JAVA" />
+
+        <item
+            android:id="@+id/nav_english"
+            android:title="ENGLISH" />
+
+    </group>
+
+
+</menu>
