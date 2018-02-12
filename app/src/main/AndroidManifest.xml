@@ -19,10 +19,11 @@
         </activity>
         <activity android:name=".AadharHomeActivity" />
         <activity android:name=".SavedAadhaarCardActivity" />
+        <activity android:name=".RazorPayActivity" />
         <activity
             android:name=".AfterGoogleLogin"
             android:label="@string/title_activity_after_google_login"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
