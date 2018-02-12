@@ -3,6 +3,11 @@ package com.vrishankgupta.chatting;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -22,6 +27,13 @@ public class AfterGoogleLogin extends AppCompatActivity
         setContentView(R.layout.activity_after_google_login);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        ViewPager viewPager= (ViewPager) findViewById(R.id.viewPager);
+        TabLayout tabLayout= (TabLayout) findViewById(R.id.tabLayout);
+        MyFragmentClass myFragmentClass=new MyFragmentClass(getSupportFragmentManager());
+        viewPager.setAdapter(myFragmentClass);
+        tabLayout.setupWithViewPager(viewPager);
+
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -97,5 +109,41 @@ public class AfterGoogleLogin extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+
+    class MyFragmentClass extends FragmentPagerAdapter {
+        public MyFragmentClass(FragmentManager fm) {
+            super(fm);
+        }
+
+        @Override
+        public CharSequence getPageTitle(int position) {
+            switch (position){
+                case 0: return "Uni";
+                case 1: return "Group";
+                case 2: return "Activities";
+            }
+            return "Null";
+        }
+
+        @Override
+        public Fragment getItem(int position) {
+            if(position==0){
+                return new FragmentUni();
+            }
+            else if(position==1){
+                return new FragmentGroup();
+            }
+            else if(position==2){
+                return new FragmentAll();
+            }
+            return null;
+        }
+
+        @Override
+        public int getCount() {
+            return 3;
+        }
     }
 }

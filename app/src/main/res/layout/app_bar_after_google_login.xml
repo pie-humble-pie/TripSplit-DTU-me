@@ -20,6 +20,7 @@
 
     </android.support.design.widget.AppBarLayout>
 
+
     <include layout="@layout/content_after_google_login" />
 
     <android.support.design.widget.FloatingActionButton
@@ -31,3 +32,4 @@
         app:srcCompat="@android:drawable/ic_dialog_email" />
 
 </android.support.design.widget.CoordinatorLayout>
+
