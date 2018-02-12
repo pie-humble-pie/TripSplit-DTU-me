@@ -32,7 +32,7 @@ public class ChatMainActivity extends AppCompatActivity {
     private FirebaseListAdapter<ChatMessage> adapter;
     RelativeLayout activity_main;
 
-    //Add Emojicon
+    // Add Emojicon
     EmojiconEditText emojiconEditText;
     ImageView emojiButton,submitButton;
     EmojIconActions emojIconActions;
@@ -79,7 +79,7 @@ public class ChatMainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_chat);
 
         activity_main = (RelativeLayout)findViewById(R.id.activity_main);
 
@@ -120,12 +120,12 @@ public class ChatMainActivity extends AppCompatActivity {
     private void displayChatMessage() {
 
         ListView listOfMessage = (ListView)findViewById(R.id.list_of_message);
-        adapter = new FirebaseListAdapter<ChatMessage>(this,ChatMessage.class,R.layout.list_item,FirebaseDatabase.getInstance().getReference())
+        adapter = new FirebaseListAdapter<ChatMessage>(this,ChatMessage.class,R.layout.chat_list,FirebaseDatabase.getInstance().getReference())
         {
             @Override
             protected void populateView(View v, ChatMessage model, int position) {
 
-                //Get references to the views of list_item.xml
+                //Get references to the views of chat_list.xml
                 TextView messageText, messageUser, messageTime;
                 messageText = (EmojiconTextView) v.findViewById(R.id.message_text);
                 messageUser = (TextView) v.findViewById(R.id.message_user);

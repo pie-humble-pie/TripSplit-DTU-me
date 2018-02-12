@@ -97,9 +97,7 @@ public class AfterGoogleLogin extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_donate) {
-            startActivity(new Intent(AfterGoogleLogin.this,DonationActivity.class));
         } else if (id == R.id.nav_market) {
-            startActivity(new Intent(AfterGoogleLogin.this, MarketActivity.class));
 
         } else if (id == R.id.nav_education) {
             Intent intent = getPackageManager().getLaunchIntentForPackage("com.example.shivam.hackeam");

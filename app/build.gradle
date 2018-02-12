@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "24.0.2"
+    buildToolsVersion '26.0.2'
     defaultConfig {
         applicationId "com.vrishankgupta.chatting"
         minSdkVersion 22
@@ -54,5 +54,6 @@ dependencies {
     compile 'com.shamanland:facebook-like-button:0.1.8'
     compile 'de.hdodenhof:circleimageview:2.2.0'
     compile 'com.github.markushi:circlebutton:1.1'
+    compile 'com.razorpay:checkout:1.4.5'
 }
 apply plugin: 'com.google.gms.google-services'

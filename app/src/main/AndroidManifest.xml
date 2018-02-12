@@ -23,16 +23,6 @@
             android:name=".AfterGoogleLogin"
             android:label="@string/title_activity_after_google_login"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".MarketActivity" />
-        <activity android:name=".MoneyDonated" />
-        <activity android:name=".DonateItemFromListActivity" />
-        <activity android:name=".ConfirmDonationOrderActivity" />
-        <activity android:name=".PaymentGateWayActivity" />
-        <activity android:name=".ThankYouActivity" />
-        <activity android:name=".OTPActivity" />
-        <activity android:name=".DonationActivity" />
-        <activity android:name=".MarketDescription" />
-        <activity android:name=".InvoiceActivity"></activity>
     </application>
 
 </manifest>
