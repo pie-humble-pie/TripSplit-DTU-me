@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    android:padding="2dp"
+    app:cardCornerRadius="@dimen/cardview_compat_inset_shadow">
+
+
+        <LinearLayout
+            android:id="@+id/text_block"
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@id/avatar"
+            android:padding="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/group_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="26sp" />
+            <TextView
+                android:id="@+id/group_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/contentRV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+</android.support.v7.widget.CardView>
