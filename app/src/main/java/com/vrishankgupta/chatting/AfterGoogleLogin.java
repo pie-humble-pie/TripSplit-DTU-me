@@ -30,7 +30,7 @@ public class AfterGoogleLogin extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_after_google_login);
-        FirebaseUser firebaseUser=FirebaseAuth.getInstance().getCurrentUser();
+        FirebaseUser firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -41,9 +41,9 @@ public class AfterGoogleLogin extends AppCompatActivity
         viewPager.setAdapter(myFragmentClass);
         tabLayout.setupWithViewPager(viewPager);
 
-        View view=getLayoutInflater().inflate(R.layout.nav_header_after_google_login,null,false);
-        TextView name= (TextView) view.findViewById(R.id.name);
-        TextView email= (TextView) view.findViewById(R.id.email);
+        View view = getLayoutInflater().inflate(R.layout.nav_header_after_google_login, null, false);
+        TextView name = (TextView) view.findViewById(R.id.name);
+        TextView email = (TextView) view.findViewById(R.id.email);
         name.setText(firebaseUser.getDisplayName());
         email.setText(firebaseUser.getEmail());
 
@@ -135,6 +135,8 @@ public class AfterGoogleLogin extends AppCompatActivity
             FirebaseAuth.getInstance().signOut();
             Intent intent = new Intent(AfterGoogleLogin.this, LoginActivity.class);
             startActivity(intent);
+        } else if (id == R.id.help) {
+
         }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
