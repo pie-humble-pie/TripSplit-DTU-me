@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.vrishankgupta.chatting">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/charity_2"
@@ -24,6 +27,7 @@
             android:name=".AfterGoogleLogin"
             android:label="@string/title_activity_after_google_login"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".ProfileActivity" android:parentActivityName=".AfterGoogleLogin"></activity>
     </application>
 
 </manifest>
